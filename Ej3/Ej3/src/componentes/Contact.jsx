@@ -2,14 +2,14 @@ import {useState} from "react";
 
 
 
-function Contact({ email, phone, show}) {
+function Contact( props ) {
 
     return (
         <>
-            {show ?  (<>
+            {props.show ?  (<>
                 <h1>Contacto</h1>
-                <p>{email}</p>
-                <p>{phone}</p>
+                <p>{props.email}</p>
+                <p>{props.phone}</p>
             </>) : (<></>)}
 
         </>
